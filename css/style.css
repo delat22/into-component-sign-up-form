@@ -128,6 +128,7 @@ button{
     font-weight: 700;
 }
 
+
 /*******VALIDATION*******/
 
 input:focus{
@@ -137,10 +138,48 @@ input:focus{
 
 small{
     display: none;
-    color: red;
+    color: hsl(0, 100%, 74%);
     float: right;
-
+    font-size: 0.8em;
 }
 
 
+/****FOOTER****/
+.attribution { font-size: 11px; text-align: center; margin-top: 1%;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (max-width: 900px){
+    #left{
+        padding: 10em 1.2em 10em 2em;
+    }
+
+    #right{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    body{
+        background-color: hsl(0, 100%, 74%);
+        background-image: url('../images/bg-intro-mobile.png');   
+    }
+    h1{
+        font-size: 2em;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left{
+        padding: 1em 1em 1em 1em;
+        text-align: center;
+    }
+
+    .info, .form{
+        margin: 0.5em auto;
+    }
+
+}
 
