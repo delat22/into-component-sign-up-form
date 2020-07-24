@@ -1,0 +1,146 @@
+/*********
+
+ Red: hsl(0, 100%, 74%) 
+ Green: hsl(154, 59%, 51%)
+
+ Accent
+
+ Blue: hsl(248, 32%, 49%)
+
+Neutral
+
+ Dark Blue: hsl(249, 10%, 26%) 
+ Grayish Blue: hsl(246, 25%, 77%) ***/
+
+
+ /*******DEFAULT*******/
+ * {
+     box-sizing: border-box;
+ }
+
+
+ /*******GENERAL*******/
+
+html{
+     font-size: 16px;
+     font-family: 'Poppins', sans-serif;
+ }
+
+body{
+     background-image: url('../images/bg-intro-desktop.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-color: hsl(0, 100%, 74%);
+     width: 100vw;
+    }
+
+h1{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+img{
+    max-width: 100%;
+}
+main{
+    height: 90vh;
+}
+/*******CONTENT*******/
+#container {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr;
+    
+}
+
+#left{
+    padding: 10em 5em 10em 10em;
+    color: #ffffff;
+}
+
+#right{
+    padding: 2em; 
+    
+
+}
+
+.info{
+    width: 80%;
+    margin: 1em 0;
+    padding: 0.5em;
+    color: #ffffff;
+    text-align: center;
+    background-color:  hsl(248, 32%, 49%);
+    border: 1px solid  hsl(248, 32%, 49%);
+    border-radius:5px;
+    box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.4);
+}
+
+.info > span{
+    color: hsl(246, 25%, 77%);
+}
+
+
+.form{
+    width: 80%;
+    background-color: #ffffff;
+    border: 10px solid #ffffff;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.4);
+}
+
+input, button{
+    width: 100%;
+    margin: 0.5em auto;
+    padding: 1em 1em 1em 1em;
+    border-radius: 5px;
+}
+
+input{
+    border: 1px solid hsl(246, 25%, 77%);
+    outline: none;
+    background-color: white;
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-size: 0;
+    background-position: right;
+    
+}
+
+button{
+    background-color: hsl(154, 59%, 51%);
+    color: #ffffff;
+    border: 2px solid hsl(154, 59%, 51%);
+    
+
+}
+
+.terms{
+    text-align: center;
+    font-size: 14px;
+    color: hsl(246, 25%, 77%);
+    margin: 0.5em 0 2em 0;
+    font-weight: 400;
+}
+
+.terms > span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+/*******VALIDATION*******/
+
+input:focus{
+    border:1px solid blue;
+    
+}
+
+small{
+    display: none;
+    color: red;
+    float: right;
+
+}
+
+
+
