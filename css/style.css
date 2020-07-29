@@ -104,15 +104,22 @@ input{
     background-repeat: no-repeat;
     background-size: 0;
     background-position: right;
+    background-position-x: 97%;
     
 }
+
+
 
 button{
     background-color: hsl(154, 59%, 51%);
     color: #ffffff;
     border: 2px solid hsl(154, 59%, 51%);
-    
+    outline: none;
+    cursor: pointer;
+}
 
+button:hover{
+    opacity: 0.8;
 }
 
 .terms{

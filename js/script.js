@@ -10,8 +10,10 @@ submitButton.addEventListener('click', ($event) => {
         if(inputForm[i].value.length === 0 ){
             inputForm[i].style.border = '1px solid red';
             inputForm[i].style.backgroundSize = '5%';
-            errorMsg[i].style.display = 'inline';
-            inputForm[2].placeholder='email@example.com';
+            errorMsg[i].style.display = 'inline-block';
+            inputForm[i].removeAttribute('placeholder');
+            inputForm[2].setAttribute('placeholder', 'email@example/com');
+            
         }
 
         else{
@@ -21,25 +23,3 @@ submitButton.addEventListener('click', ($event) => {
         }
     }
 });
-
-
-/***
-submitButton.addEventListener('click', ($event) => {
-    $event.preventDefault();
-    if (firstName.value.length === 0 && lastName.value.length === 0 && password.value.length === 0 && email.value.length === 0){
-        firstName.style.border = '1px solid red';
-        lastName.style.border = '1px solid red';
-        password.style.border = '1px solid red';
-        email.style.border = '1px solid red';
-        errorMsg.style.display = 'inline'
-    }
-
-    else{
-        firstName.style.border = '1px solid green';
-        lastName.style.border = '1px solid green';
-        password.style.border = '1px solid green';
-        email.style.border = '1px solid green';
-        errorMsg.style.display = 'none'
-    }
-    
-}); ****/
